@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="/styleindex.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron mt-3">
+            <div class="row">
+                <h2 class="produtos">Produtos - Daora <span class="badge">Ola v 2.0.0</span></h2>
+            </div>
+        </div>
+
+        <% if (role === 'admin') { %>
+            <div class="row my-3">
+                <a class="btn btn-success" href="/add">Adicionar Produtos Daora</a>
+            </div>
+        <% } %>
+
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">PRODUTO</th>
+                        <th scope="col">NOME</th>
+                        <th scope="col">DESCRIÇÃO</th>
+                        <th scope="col">FORNECEDOR</th>
+                        <th scope="col">MARCA</th>
+                        <th scope="col">PREÇO DE COMPRA</th>
+                        <th scope="col">PREÇO DE VENDA</th>
+                        <th scope="col">ESTOQUE</th>
+                        <th scope="col">AÇÃO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% users.forEach(user => { %>
+                        <tr>
+                            <td><%= user.id %></td>
+                            <td>
+                                <% if(user.imagem) { %>
+                                    <img src="/uploads/produtos/<%= user.imagem %>" alt="Imagem do produto" style="max-width: 100px; max-height: 80px; object-fit: contain;" />
+                                <% } else { %>
+                                    Sem imagem
+                                <% } %>
+                            </td>
+                            <td><%= user.nome %></td>
+                            <td><%= user.descricao %></td>
+                            <td><%= user.fornecedor %></td>
+                            <td><%= user.marca %></td>
+                            <td><%= user.compra %></td>
+                            <td><%= user.venda %></td>
+                            <td><%= user.estoque %></td>
+                            <td>
+                                <% if (role === 'admin') { %>
+                                    <a class="btn btn-edit btn-sm" href="/edit/<%= user.id %>">Editar</a>
+                                    <a class="btn btn-danger btn-sm" href="/dell/<%= user.id %>">Excluir</a>
+                                <% } else { %>
+                                    <span class="text-muted">Somente admin</span>
+                                <% } %>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

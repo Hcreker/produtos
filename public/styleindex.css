@@ -1,0 +1,166 @@
+/* Reset de estilo - para garantir que o navegador comece do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: sans-serif;
+    background-color: #F4F5F7; 
+    color: #3E4A59; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+.jumbotron {
+    background-color: #3E4A59;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Título */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #80CBC4; 
+}
+
+
+.badge {
+    background-color: #607D8B; 
+    padding: 6px 12px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+/* Títulos da tabela */
+th {
+    background-color: #3E4A59; 
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd; 
+}
+
+/* Linhas da tabela */
+td {
+    background-color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Botões */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 5px; 
+    white-space: nowrap; /* Evita que o texto quebre */
+}
+
+
+a.btn-success {
+    background-color: #607D8B;
+    color: white;
+    border: 2px solid #607D8B; 
+    transition-duration: 0.2s;
+}
+
+a.btn-success:hover {
+    background-color: #80CBC4; 
+    border: 2px solid #80CBC4; 
+    color: #607D8B;
+    transition-duration: 0.2s;
+}
+
+/* Botão de perigo (Excluir) */
+a.btn-danger {
+    background-color: #B0BEC5; 
+    color: white;
+    border: 2px solid #B0BEC5;
+    transition-duration: 0.2s;
+}
+
+a.btn-danger:hover {
+    background-color: #bc7878; 
+    border: 2px solid #bc7878; 
+    color: #deb9b9;
+    transition-duration: 0.2s;
+}
+
+/* Botão primário (Editar) */
+a.btn-edit {
+    background-color: #3E4A59; 
+    color: white;
+    border: 2px solid #3E4A59;
+    transition-duration: 0.2s;
+}
+
+a.btn-edit:hover {
+    background-color: #607D8B; 
+    border: 2px solid #607D8B; 
+    color: #80CBC4;
+    transition-duration: 0.2s;
+}
+
+
+a.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+a.btn-outline-warning {
+    background-color: white;
+    color: #3E4A59;
+    border: 2px solid #3E4A59;
+}
+
+a.btn-outline-warning:hover {
+    background-color: #3E4A59;
+    color: white;
+}
+
+
+a.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os botões e elementos */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Permite que a tabela seja rolável em telas menores */
+}

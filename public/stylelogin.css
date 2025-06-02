@@ -1,0 +1,99 @@
+/* Estilo do corpo */
+body {
+    font-family: sans-serif;
+    background-color: #F4F5F7; /* Fundo cinza muito claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contêiner de login */
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid #3E4A59; /* Azul escuro acinzentado para a borda */
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3E4A59; /* Azul escuro acinzentado */
+}
+
+/* Estilo dos campos de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #607D8B; /* Cinza azulado para os rótulos */
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #607D8B; /* Cinza azulado para as bordas */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fundo branco para os inputs */
+}
+
+/* Estilo do botão de submit */
+button[type="submit"] {
+    background-color: #607D8B; /* Cinza azulado */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #80CBC4; /* Verde suave no hover */
+    transition-duration: 0.2s;
+    color: #607D8B;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: #D32F2F; /* Vermelho suave para mensagens de erro */
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo do painel de controle */
+.dashboard-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Botão de logout */
+.logout-button {
+    background-color: #3E4A59; /* Azul escuro acinzentado */
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #607D8B; /* Cinza azulado no hover */
+    
+}
